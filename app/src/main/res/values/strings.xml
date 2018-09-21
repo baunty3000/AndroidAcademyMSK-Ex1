@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="btn_preview">PREVIEW</string>
+    <string name="btn_email">EMAIL</string>
+</resources>
