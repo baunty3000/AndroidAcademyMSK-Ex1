@@ -38,12 +38,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnEmail :
-                sendEmail(this,new String[] {"baunty3000@gmail.com"},"subject","body");
+                sendEmail(this,new String[] {"baunty3000@gmail.com"},"subject");
                 break;
         }
     }
 
-    public static void sendEmail(Activity activity,String[] to, String subject, String body){
+    public static void sendEmail(Activity activity,String[] to, String subject){
         Intent sendEmailIntent = new Intent(Intent.ACTION_SENDTO);
         sendEmailIntent.setData(Uri.parse("mailto:"));
         sendEmailIntent.putExtra(Intent.EXTRA_EMAIL, to);
