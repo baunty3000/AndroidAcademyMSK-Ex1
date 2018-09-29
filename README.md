@@ -1,3 +1,3 @@
 # AndroidAcademyMSK-Ex1
-AndroidAcademyMSK лекция №2 - https://docs.google.com/presentation/d/18aMLEsNR2n8_otCOZnvnhiSWRi9-6PcKqUypbh0uOqI/edit
-Домашнее задание - https://docs.google.com/presentation/d/1MaCcoI8aQD7zqw1V4lVaC1t8cQcOt9l_QYxE1UBHRi0/edit
+AndroidAcademyMSK лекция №1 - https://docs.google.com/presentation/d/1VTdd0-t-zzm0DUwAxO7USMp-Xl1v5MuUrTap8tcwItk/edit#slide=id.p
+Домашнее задание - https://docs.google.com/presentation/d/1m1lTXdN-A_qhMpa312amlrlgZ3-3unEqDNK8KOyVC7k/edit#slide=id.p
