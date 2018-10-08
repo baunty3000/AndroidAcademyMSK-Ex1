@@ -14,7 +14,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     private static final String KEY_TV2 = "KEY_TV2";
     private Button mBtnEmail;
     private TextView mTv2;
-    private static String mBody;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public static void start(Activity activity, String text){
-        mBody = text;
         Intent secondActivityIntent = new Intent(activity, SecondActivity.class);
         secondActivityIntent.putExtra(KEY_TV2, text);
         activity.startActivity(secondActivityIntent);
@@ -43,12 +41,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    public static void sendEmail(Activity activity,String[] to, String subject){
+    public void sendEmail(Activity activity,String[] to, String subject){
         Intent sendEmailIntent = new Intent(Intent.ACTION_SENDTO);
         sendEmailIntent.setData(Uri.parse("mailto:"));
         sendEmailIntent.putExtra(Intent.EXTRA_EMAIL, to);
         sendEmailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-        sendEmailIntent.putExtra(Intent.EXTRA_TEXT, mBody);
+        sendEmailIntent.putExtra(Intent.EXTRA_TEXT, getIntent().getStringExtra(KEY_TV2));
         if (sendEmailIntent.resolveActivity(activity.getPackageManager()) != null) {
             activity.startActivity(sendEmailIntent);
         } else{
